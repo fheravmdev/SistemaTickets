@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BibliotecaVirtual.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title> 
+
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/libro-logo.png" alt="navbarIcon" width="50" height="50" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+<%--                            right buttonset--%>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <%--                                dropdown solicitudes--%>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropDownSolicitudes" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Solicitudes
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Realizar solicitud</a></li>
+                                        <li><a class="dropdown-item" href="#">Mis solicitudes</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item text-danger" href="#">Cancelar solicitud</a></li>
+                                    </ul>
+                                </li>
+                                <%--                                dropdown solicitudes--%>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropDownCatálogos" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Catálogos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Sucursales</a></li>
+                                        <li><a class="dropdown-item" href="#">Inventario de equipos</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-header">Empleados</li>
+                                        <li><a class="dropdown-item" href="#">Técnicos</a></li>
+                                        <li><a class="dropdown-item" href="#">Responsables de tienda</a></li>
+                                        <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Reportes</a>
+                                </li>
+
+                            </ul>
+
+<%--                            left buttonset--%>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Register</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <%-- Main content placeholder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%-- Main content placeholder end--%>
+
+        <footer>
+            <p>
+                &copy; holamundo esta es mi primera página en c#. 
+                <a class="footerlinks" href="#" target="_blank">holamundo.com</a>
+            </p>
+        </footer>
+    </form>
+
+</body>
+</html>
