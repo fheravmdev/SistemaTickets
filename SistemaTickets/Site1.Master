@@ -13,9 +13,14 @@
     <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
     <%--fontawesome css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
+<%--    mi css--%>
+    <link href="css/Styles.css" rel="stylesheet" />
 
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<%--    Data tables js--%>
+<%--    <script src="datatables/js/dataTables.min.js"></script>--%>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -40,7 +45,7 @@
                         </div>
                         <div class="offcanvas-body">
 
-<%--                            right buttonset--%>
+<%--                            left buttonset--%>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -80,23 +85,33 @@
 
                             </ul>
 
-<%--                            left buttonset--%>
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<%--                            right buttonset--%>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Login</a>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-derecha">
+                                <li class="nav-item active">
+                                    <asp:LinkButton ID="btnRegistrarse" runat="server" CssClass="nav-link">
+                                        Solicitar usuario  <i class="fas fa-user-plus"></i>
+                                    </asp:LinkButton>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Register</a>
+                                    <asp:LinkButton ID="btnIniciarSesion" runat="server"  CssClass="nav-link">
+                                        Iniciar sesión  <i class="fas fa-sign-in-alt"></i>
+                                    </asp:LinkButton>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Register</a>
+                                    <asp:LinkButton ID="btnSalir" runat="server"  CssClass="nav-link">
+                                        Salir  <i class="fas fa-sign-out-alt"></i>
+                                    </asp:LinkButton>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Register</a>
+                                    <asp:LinkButton ID="btnUsuario" runat="server"  CssClass="nav-link">
+                                        Hola, [Usuario]
+                                    </asp:LinkButton>
                                 </li>
-
                             </ul>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -111,11 +126,21 @@
         <%-- Main content placeholder end--%>
 
         <footer>
-            <p>
-                &copy; holamundo esta es mi primera página en c#. 
-                <a class="footerlinks" href="#" target="_blank">holamundo.com</a>
-            </p>
+            <div id="footer1" class ="container-fluid">
+                <div class="row">
+                    <div class="col-cs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LBtnAyuda" runat="server">
+                                Ayuda  <i class="fas fa-question-circle"></i>
+                            </asp:LinkButton>
+                        </p>
+                    </div>
+                </div>
+
+            </div>            
         </footer>
+
+        
     </form>
 
 </body>
