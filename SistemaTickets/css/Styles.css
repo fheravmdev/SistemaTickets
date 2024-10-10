@@ -98,3 +98,22 @@
         border-color: #005bb3;
         box-shadow: 0 0 0 0.2rem rgba(0, 160, 220, 0.5);
 }
+
+.rounded-pill {
+    font-size: 1rem;
+}
+
+.badge.bg-primary {
+    
+    margin-bottom: 20px;
+    background-color: #009f5b !important;
+}
+
+.bg-semi-danger{
+/*    background-color: #ffdb00 !important;
+    color: #000000;*/
+}
+/*ESTILOS DE TABLAS*/
+.thead-light {
+    background-color: #005bb3 !important;
+}

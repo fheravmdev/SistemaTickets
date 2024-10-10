@@ -70,6 +70,7 @@
     <Content Include="adminLogin.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="catInventario.aspx" />
     <Content Include="css\Styles.css" />
     <Content Include="datatables\css\dataTables.dataTables.min.css" />
     <Content Include="datatables\js\dataTables.min.js" />
@@ -2163,6 +2164,7 @@
     <Content Include="homepage.aspx" />
     <Content Include="imgs\libro-logo.png" />
     <Content Include="login.aspx" />
+    <Content Include="userProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2172,6 +2174,13 @@
     </Compile>
     <Compile Include="adminLogin.aspx.designer.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catInventario.aspx.cs">
+      <DependentUpon>catInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catInventario.aspx.designer.cs">
+      <DependentUpon>catInventario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formulario web1.aspx.cs">
       <DependentUpon>Formulario web1.aspx</DependentUpon>
@@ -2208,6 +2217,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userProfile.aspx.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userProfile.aspx.designer.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

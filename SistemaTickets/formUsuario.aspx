@@ -2,7 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <section class="bg-img">
+        <img src="imgs/home-bg-img.png" />
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
@@ -79,6 +81,13 @@
                         
 
                         <!-- Contraseña y Confirmación de Contraseña -->
+                        <div class="row">
+                            <div class="col">
+                                <center>
+                                    <span class="badge bg-primary">Información de Usuario</span>
+                                </center>  
+                            </div>
+                        </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <asp:Label ID="Label5" runat="server" Text="Contraseña"></asp:Label>
@@ -94,7 +103,10 @@
                             </div>
                         </div>
 
+
+
                         <!-- Botones -->
+                        
                         <div class="row">
                             <div class="col">
                                 <div class="form-group mb-3">
